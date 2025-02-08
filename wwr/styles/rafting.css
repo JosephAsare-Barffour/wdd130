@@ -1,0 +1,107 @@
+/* --------------------------- Global Styles --------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* First font choice */
+    background-color: #E0F7FA; /* Background color */
+    color: #333;
+}
+
+/* --------------------------- Logo Styles --------------------------- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0288D1; /* Primary color */
+}
+
+.header img {
+    height: 50px;
+    width: auto;
+}
+
+/* --------------------------- Navigation Styles --------------------------- */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #0288D1; /* Primary color */
+    padding: 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffffff; /* Text color */
+    margin: 0 20px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif; /* Second font choice */
+}
+
+.navbar a:hover {
+    color: #FF6F00; /* Hover color */
+}
+
+/* --------------------------- Section Styles --------------------------- */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #0288D1; /* Primary color */
+    font-size: 36px;
+}
+
+p {
+    font-size: 18px;
+    color: #616161;
+}
+
+/* --------------------------- Color Palette (from Coolors.co) --------------------------- */
+:root {
+    --primary-color: #0288D1; /* Blue */
+    --secondary-color: #FF6F00; /* Orange */
+    --background-color: #E0F7FA; /* Light blue */
+    --accent-color: #43A047; /* Green */
+    --text-color: #333333; /* Dark gray */
+}
+
+/* --------------------------- Footer Styles --------------------------- */
+.footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* --------------------------- Button Styles --------------------------- */
+button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--accent-color); /* Green on hover */
+}
+
+/* --------------------------- Responsive Design --------------------------- */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+    }
+}
+
